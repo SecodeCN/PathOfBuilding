@@ -143,7 +143,7 @@ function PassiveSpecClass:Save(xml)
 	t_insert(xml, {
 		-- Legacy format
 		elem = "URL", 
-		[1] = self:EncodeURL("https://www.pathofexile.com/passive-skill-tree/")
+		[1] = self:EncodeURL("https://poe.game.qq.com/passive-skill-tree/")
 	})
 
 	local sockets = {

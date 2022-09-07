@@ -69,7 +69,7 @@ local PassiveTreeClass = newClass("PassiveTree", function(self, treeVersion)
 			page = pageFile:read("*a")
 			pageFile:close()
 		else
-			page = getFile("https://www.pathofexile.com/passive-skill-tree")
+			page = getFile("https://poe.game.qq.com/passive-skill-tree")
 		end
 		local treeData = page:match("var passiveSkillTreeData = (%b{})")
 		if treeData then
